@@ -92,7 +92,7 @@ ${TERMINAL_NOTIFIER_BIN} -title "Docker Virtualbox" -message "Virtual machine '$
             --virtualbox-no-share \
             --virtualbox-hostonly-nictype "Am79C973" \
             --virtualbox-nat-nictype "Am79C973" \
-            --virtualbox-boot2docker-url  "https://github.com/bassrock/boot2docker/releases/download/latest/boot2docker.iso" \
+            --virtualbox-boot2docker-url  "https://github.com/bassrock/boot2docker/releases/download/v20.10.1/boot2docker.iso" \
             ${DOCKER_MACHINE_MACHINE_NAME}
     }
 
