@@ -89,6 +89,10 @@ ${TERMINAL_NOTIFIER_BIN} -title "Docker Virtualbox" -message "Virtual machine '$
             --virtualbox-cpu-count ${DOCKER_MACHINE_CPU_COUNT} \
             --virtualbox-memory ${DOCKER_MACHINE_MEMORY_COUNT} \
             --virtualbox-disk-size ${DOCKER_MACHINE_DISK_SIZE} \
+            --virtualbox-no-share \
+            --virtualbox-hostonly-nictype "Am79C973" \
+            --virtualbox-nat-nictype "Am79C973" \
+            --virtualbox-boot2docker-url  "https://github.com/bassrock/boot2docker/releases/download/latest/boot2docker.iso" \
             ${DOCKER_MACHINE_MACHINE_NAME}
     }
 
