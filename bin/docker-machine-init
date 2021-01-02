@@ -102,7 +102,7 @@ ${TERMINAL_NOTIFIER_BIN} -title "Docker Virtualbox" -message "Virtual machine '$
 
 ${TERMINAL_NOTIFIER_BIN} -title "Docker Virtualbox" -message "Configuring NFS mount for: '${DOCKER_MACHINE_MACHINE_NAME}'"
 
-${DOCKER_MACHINE_NFS_BIN} ${DOCKER_MACHINE_MACHINE_NAME}
+${DOCKER_MACHINE_NFS_BIN} ${DOCKER_MACHINE_MACHINE_NAME} --mount-opts="noacl,async,nfsvers=3,soft,proto=tcp,mountproto=tcp"
 
 [[ $1 == "initialize" ]] && {
     echo ""
